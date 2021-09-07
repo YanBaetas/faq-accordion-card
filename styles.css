@@ -56,8 +56,12 @@ body {
   /*filter: drop-shadow(0 30px 1px rgba(0, 0, 0, 0.1));*/
 }
 
-.banner-image .woman-image {
+.banner-image .woman-image-mobile {
   transform: translateX(-13px);
+}
+
+.banner-image .woman-image-desktop {
+  display: none;
 }
 
 .faq {
@@ -152,7 +156,7 @@ body {
 
 /*For Iphone 5*/
 @media only screen and (max-width: 320px) {
-  .banner-image .woman-image {
+  .banner-image .woman-image-mobile {
     transform: translateX(-25px);
   }
 }
@@ -183,8 +187,11 @@ body {
   .banner-image {
     transform: translate(-17%, 0);
   }
-  .banner-image .woman-image {
-    content: url("./images/illustration-woman-online-desktop.svg");
+  .banner-image .woman-image-mobile {
+    display: none;
+  }
+  .banner-image .woman-image-desktop {
+    display: block;
   }
   .faq {
     width: 80%;
